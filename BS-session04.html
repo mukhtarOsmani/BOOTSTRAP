@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="./css/bootstrap.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"  ></script>
+    
+<style type="text/css">
+    
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <div id="imgSlider" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-indicators">
+<button type="button" class="active" data-bs-target="#imgSlider" data-bs-slide-to="0"></button>
+<button type="button"  data-bs-target="#imgSlider" data-bs-slide-to="1"></button>
+<button type="button"  data-bs-target="#imgSlider" data-bs-slide-to="2"></button>
+</div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                    <img src="./img/BACK-END.jpg" class="d-block w-100"  >
+
+                    <div class="carousel-caption">Back End Progarm Courses</div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/FRONT-END.jpg" class="d-block" >
+                <div class="carousel-caption">Front End Progarm Courses</div>
+        </div>
+        <div class="carousel-item">
+            <img src="./img/FULL-STACK.jpg" class="d-block"  >
+            <div class="carousel-caption">Full Stack Progarm Courses</div>
+    </div>
+        </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#imgSlider"  data-bs-slide-to="prev">
+                
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#imgSlider"  data-bs-slide-to="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+    </div>
+
+<!--Carousel Section End-->
+
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#RegisterModal"  >To join our progaram - Click Here</button>
+
+
+
+<div class="modal" id="RegisterModal">
+
+<div class="modal-dialog  moal-dialog-scrollable">
+<div class="modal-content">
+
+    <div class="modal-header">
+        <h3>Register Form</h3>
+    </div>
+
+
+    <div class="modal-body">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam recusandae illum numquam natus officia ducimus? Ea sequi inventore optio harum laborum accusamus? Ex temporibus placeat, aut magnam quam iusto porro.</p>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+    </div>
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!--Modal Section End-->
+
+<div class="toast show">
+    <div class="toast-header">
+        Warning
+        <button type="button" class="btn btn-close" data-bs-dismiss="toast"></button>
+    </div>
+
+    <div class="toast-body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis asperiores, maiores molestiae necessitatibus, perspiciatis voluptas ab nobis distinctio saepe quibusdam quis quasi dolor veniam expedita porro velit iusto quidem itaque?</p>
+    </div>
+</div>
+
+
+
+
+<!--toast Section End-->
+<div class="col col-lg-12">
+    <div class="row">
+<div class="col col-lg-2"></div>
+<div class="col col-lg-8">
+   <!-- <form action="#">
+        <div class="mb-3 mt-3">
+
+           
+            <div class="input-group">
+                <span class="input-group-text">UserName</span>
+                <input type="text" class="form-control" id="UserName" placeholder="Enter Your User Name" name="UserName">
+            </div>
+
+            
+        </div>
+        
+        <div class="mb-3 mt-3">
+
+            <div class="input-group">
+                <span class="input-group-text">Password</span>
+                <input type="text" class="form-control" id="Password" placeholder="Enter Your Password" name="Password">
+            </div>
+
+           
+        </div>
+
+
+        <div class="mb-3 mt-3">
+            <label for="Password" class="form-label" >Favorite Color</label>
+            <input type="color" class="form-control form-control-color" id="facColor" name="facColor"  value="#ffc107" >
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="language" class="form-label" >Language</label>
+           <select class="form-select form-select">
+               <option>1.English</option>
+               <option>2.Spanish</option>
+               <option>3.Arabic</option>
+           </select>
+        </div>
+        
+        <div class="mb-3 mt-3">
+            <label for="Education_Level" class="form-label" >Education Level</label>
+        Deg 12  <input type="checkbox" class="form-check-input" id="deg12" name="deg12" value="Deg 12">
+        Bachelore <input type="checkbox" class="form-check-input" id="bach" name="bach">
+        Master <input type="checkbox" class="form-check-input" id="master" name="master">
+        PHD <input type="checkbox" class="form-check-input" id="phd" name="phd">
+        </div>
+
+        <div class="mb-3 mt-3">
+            <label for="gender" class="form-label" >Gender</label>
+           Male <input type="radio" class="form-check-input" id="male" name="gender" value="male">
+           Female <input type="radio" class="form-check-input" id="female" name="gender" value="female">
+        </div>
+
+        <div class="mb-3 mt-3">
+            <label for="gender" class="form-label" >Age Group</label>
+           <input type="range" class="form-range" id="age_group"  min="0" max="5">
+        </div>
+
+     <div class="mb-3 mt-3">
+         <label for="Description" class="form-label" >Description</label> 
+         
+            <textarea class="form-control" rows="5" id="desc" name="desc"></textarea>
+        </div>
+        
+        <button type="button" class="btn btn-success">Sign Up</button>
+        
+        </form>-->
+
+</div>
+<div class="col col-lg-2"></div>
+</div>
+</div>
+
+
+
+
+<div class="col col-lg-12 mb-3 mt-3">
+<div class="row">
+<div class="col col-lg-2"></div>
+<div class="col col-lg-8">
+<form action="#" class="was-validated">
+    <div class="input-group bmb-3">
+        <input type="text" class="form-control" placeholder="UserName" required>
+        <div class="valid-feedback">Your Entered Data is valid</div>
+    <div class="invalid-feedback">Please Enter Valid Data</div>
+        <!-- <input type="password" class="form-control" placeholder="password" required> -->
+        <button type="submit" class="btn btn-success">Login</button>
+    </div>
+
+    
+
+
+</form>
+
+
+
+</div>
+<div class="col col-lg-2"></div>
+<div class="row">
+
+</div>
+
+
+
+
+<br><br><br><br><br><br>
+</div>
+
+
+</body>
+</html>
