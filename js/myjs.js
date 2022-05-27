@@ -17,6 +17,9 @@ function showCompanyName()
     document.getElementById("one").innerHTML = CompnayName 
 }
 
-
+function showMe()
+{
+    alert("Welcome")
+}
 
 
